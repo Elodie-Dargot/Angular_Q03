@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'directives';
+  title: string = 'Bonjour!';
+
+  isAdmin: boolean = true;
+
+  changeIsAdmin(){
+    this.isAdmin = !this.isAdmin
+  }
 }
